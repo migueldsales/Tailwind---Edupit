@@ -8,30 +8,35 @@ body{
   .container{
     @apply max-w-[120rem] px-[0rem]
   }
+  .text-stroke{
+    -webkit-text-stroke: 5px #ffffff;
+    text-stroke: 4px #ffffff;
+  }
 
 @layer components {
-
+  header{
+    @apply bg-light lg:bg-darkblue
+  }
 .header-wrapper{
     @apply max-w-[90rem] mx-auto
 }
-.header-nav-top{
-    @apply flex justify-center my-[1rem]
+.branding{
+    @apply flex justify-center my-[1rem] lg:hidden
 }
-.header-nav-top img{
+.branding-img{
     @apply cursor-pointer
 }
 .header-nav-main{
     @apply bg-primary items-center p-[1rem] flex justify-between
-}
-/* .header-nav-main.open{
-    @apply absolute left-[0rem] transition-all duration-300
-} */
+  lg:hidden
+  }
 .header-nav-main h4{
     @apply font-extrabold text-light text-[1.3rem];
 }
 .header-nav-drop{
-    @apply relative left-[-100rem] overflow-hidden w-[100%] bg-light h-full transition-all duration-300 
-}
+    @apply absolute left-[-100rem] overflow-hidden w-[100%] bg-light h-full transition-all duration-300 
+    lg:hidden
+  }
 .header-nav-drop.open{
     @apply absolute left-[0] transition-all duration-300
 }
@@ -48,10 +53,18 @@ body{
     @apply max-h-[0] transition-all duration-300 overflow-hidden 
 }
 .nav-drop-sub-item li{
-    @apply hover:bg-bglight
+    @apply hover:bg-bglight transition-all ease-in-out duration-500
 }
 .nav-drop-sub-item.open{
-    @apply max-h-[100vh] block transition-all duration-300
+    @apply max-h-[140vh] block transition-all duration-300
+}
+
+.nav-drop-sub-item h5{
+  @apply flex justify-between pe-[1rem] border-b py-[.5rem]
+}
+
+.nav-drop-sub-item li a{
+  @apply w-[100%] flex hover:text-primary transition-all ease-in-out duration-300
 }
 .nav-drop-item ul li{
     @apply border-b py-[.5rem]
@@ -78,6 +91,7 @@ body{
     @apply bg-light translate-x-0 translate-y-[-7.5px] rotate-[-225deg] w-[1.5rem] ;
   }
     /* NAV DROP TOGGLE MENU */
+    
   .nav-drop-toggle-menu span{
     @apply w-[.6rem] h-[.18rem] bg-dark block;
   }
@@ -88,34 +102,7 @@ body{
     @apply opacity-0;
   }
   /* NAV DROP TOGGLE MENU EXPAND */
-  .nav-drop-toggle-menu-exp span{
-    @apply w-[.6rem] h-[.18rem] bg-dark block;
-  }
-  .nav-drop-toggle-menu-exp span:last-child{
-    @apply w-[.6rem] h-[.18rem] bg-dark translate-y-[-2.9px] rotate-90 ;
-  }
-  .nav-drop-toggle-menu-exp.open span:last-child{
-    @apply opacity-0;
-  }
-    /* NAV DROP TOGGLE MENU EXPAND LAST NA LAST NA LAST */
-  .nav-drop-toggle-menu-exp-2 span{
-    @apply w-[.6rem] h-[.18rem] bg-dark block;
-  }
-  .nav-drop-toggle-menu-exp-2 span:last-child{
-    @apply w-[.6rem] h-[.18rem] bg-dark translate-y-[-2.9px] rotate-90 ;
-  }
-  .nav-drop-toggle-menu-exp-2.open span:last-child{
-    @apply opacity-0;
-  }
-  .nav-drop-sub-item h5{
-    @apply flex justify-between pe-[1rem] border-b py-[.5rem]
-  }
-  .nav-drop-sub-item ul li:hover{
-    @apply  bg-blue-100 transition-all ease-in-out duration-500
-  }
-  .nav-drop-sub-item li a{
-    @apply w-[100%] flex hover:text-primary transition-all ease-in-out duration-300
-  }
+  
   /* .nav-drop-sub-item-exp{
     @apply max-h-[0] transition-all duration-300 overflow-hidden
   }
@@ -132,6 +119,109 @@ body{
   .nav-drop-sub-item-exp-2 h6{
     @apply flex justify-between pe-[1rem] border-b py-[.5rem]
   }
-  
-
+  .header-nav-top{
+    @apply hidden lg:block lg:relative lg:bg-primary lg:text-light lg:py-[1rem]
+  }
+  .header-nav-top-content{
+    @apply flex justify-between mx-[15rem]
+  }
+  .header-nav-top-content p a i{
+    @apply mr-[1rem] 
+  }
+  .header-nav-top p{
+    @apply font-medium
+  }
+  .header-nav-top a{
+    @apply ms-[1rem]
+  }
+  .header-socials ul{
+    @apply flex gap-[1rem] 
+  } 
+  .header-socials ul li a {
+    @apply hover:text-dark
+  } 
+  .log-in a:first-child{
+    @apply pe-[1rem] border-r-2 border-light 
+  }
+  .header-nav-main-l{
+    @apply lg:bg-darkblue
+  }
+  .header-nav-content {
+    @apply relative max-w-[90rem] mt-[2rem] mx-[18rem] bg-bgblue hidden p-[2rem] rounded-lg lg:flex justify-between items-center
+  }
+  .header-nav-l-item-holder{
+    @apply flex text-light gap-[1.5rem]
+  }
+  .header-l-nav-item h4 {
+    @apply  items-center text-[1rem] font-medium
+  }
+  .header-l-nav-item h4 i{
+    @apply text-[.6rem] text-gray-400 px-[.2rem] 
+  }
+  .btn-primary{
+    @apply bg-primary hover:bg-dark py-[.8rem] px-[2rem] rounded-md transition-all ease-in-out duration-500
+  }
+  .btn-primary a{
+    @apply text-light text-[1.1rem] font-medium
+  }
+  .btn-trans{
+    @apply bg-transparent hover:bg-primary py-[.8rem] px-[2rem] rounded-md border border-primary transition-all ease-in-out duration-500
+  }
+  .btn-trans a{
+    @apply text-primary text-[1.1rem] font-medium hover:text-light
+  }
+  .btn-trans:hover a {
+    @apply text-light
+  }
+  .banner{
+    @apply bg-bannerBg min-h-[42rem] lg:min-h-[48rem] py-[5rem]
+  }
+  .banner-text {
+    @apply absolute lg:text-left lg:relative lg:mx-[15rem] lg:w-[50rem] z-50 top-[35%] lg:top-[20%] mx-[2rem] text-light text-center items-center 
+  }
+  .banner-img{
+    @apply hidden lg:block
+  }
+  .banner-text h1{
+    @apply text-[1.5rem] font-extrabold lg:text-[4rem]
+  }
+  .banner-text h3{
+    @apply text-[1.3rem] mt-[2rem] lg:text-[1.2rem] lg:w-[40rem]
+  }
+  .banner-btn{
+    @apply flex mt-[3rem] gap-[.2rem] justify-center lg:justify-start lg:gap-[1rem]
+  }
+  .banner-wrapper span{
+    @apply absolute top-[30%] text-light text-[4rem] font-black opacity-5
+    lg:left-[14.7rem] lg:top-[38%] lg:text-[8rem]
+  } 
+  .banner-wrapper h6 span{
+    @apply absolute top-[30%] text-darkblue text-[4rem] font-thin opacity-100 z-10 
+    lg:left-[14.7rem] lg:top-[38%] lg:text-[8rem]
+  }
+  .banner-slider-content{
+    @apply lg:grid lg:grid-cols-2
+  }
+  .slider-card{
+    @apply py-[7rem]
+  }
+  .slider-card-holder{
+    @apply grid gap-[2rem] justify-center 
+  }
+  .slider-card-list{
+    @apply bg-light border-2 border-primary rounded-xl py-[4rem] w-[25rem] block justify-center text-center
+  }
+  .slider-card-list img{
+    @apply flex justify-center mx-auto items-center
+  }
+  .slider-card-list h3 {
+    @apply text-[1.5rem] font-bold my-[1rem]
+  }
+  .slider-card-list h2 {
+    @apply text-primary text-[1rem] font-medium
+  }
 }
+
+
+
+
