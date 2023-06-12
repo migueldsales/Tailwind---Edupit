@@ -11,12 +11,14 @@ module.exports = {
         secondary: '#2a374c',
         bglight: '#f0f6f4',
         bgblue: '#18406b',
+        bggreen: '#dbf4ec',
       },
       fontFamily:{
         'Poppins' :['Poppins', 'sans-serif']
       },
       backgroundImage: {
         'bannerBg': "url('./img/slider-bg2.jpg')",
+        'lessonBg': "url('./img/shape.png')",
       }
     },
   },

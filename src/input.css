@@ -38,7 +38,7 @@ body{
     lg:hidden
   }
 .header-nav-drop.open{
-    @apply absolute left-[0] transition-all duration-300
+    @apply absolute left-[0] transition-all z-20 duration-300
 }
 .nav-drop-item h4 {
     @apply border-b p-[1rem] items-center flex justify-between  cursor-pointer;
@@ -167,6 +167,9 @@ body{
   .btn-trans{
     @apply bg-transparent hover:bg-primary py-[.8rem] px-[2rem] rounded-md border border-primary transition-all ease-in-out duration-500
   }
+  .btn-trans-black{
+    @apply bg-transparent text-black hover:bg-primary hover:text-light py-[.8rem] px-[2rem] rounded-md border border-dark transition-all ease-in-out duration-500
+  }
   .btn-trans a{
     @apply text-primary text-[1.1rem] font-medium hover:text-light
   }
@@ -177,7 +180,7 @@ body{
     @apply bg-bannerBg min-h-[42rem] lg:min-h-[48rem] py-[5rem]
   }
   .banner-text {
-    @apply absolute lg:text-left lg:relative lg:mx-[15rem] lg:w-[50rem] z-50 top-[35%] lg:top-[20%] mx-[2rem] text-light text-center items-center 
+    @apply absolute lg:text-left lg:relative lg:mx-[15rem] lg:w-[50rem] z-10 top-[35%] lg:top-[20%] mx-[2rem] text-light text-center items-center 
   }
   .banner-img{
     @apply hidden lg:block
@@ -209,7 +212,7 @@ body{
     @apply grid gap-[2rem] justify-center 
   }
   .slider-card-list{
-    @apply bg-light border-2 border-primary rounded-xl py-[4rem] w-[25rem] block justify-center text-center
+    @apply bg-light border-2 border-primary rounded-xl py-[4rem] w-[25rem] block justify-center text-center hover:shadow-2xl transition-all duration-500 ease-in-out
   }
   .slider-card-list img{
     @apply flex justify-center mx-auto items-center
@@ -219,6 +222,203 @@ body{
   }
   .slider-card-list h2 {
     @apply text-primary text-[1rem] font-medium
+  }
+
+  .about-img{
+    @apply py-[5rem] flex justify-center
+  }
+  .about-text{
+    @apply  px-[5rem]
+  }
+  .about-text h1{
+    @apply text-[1.5rem] font-extrabold text-primary
+  }
+  .about-text h2{
+    @apply text-[1.5rem] mb-[2rem] font-bold
+  }
+  .about-text h6{
+    @apply pb-[2rem] w-[34rem] text-[1.4rem] text-gray-400 border-l-[3px] border-primary
+  }
+  .about-text p{
+    @apply text-[1.2rem] mt-[1rem]  text-gray-500
+  }
+  .about-text h3{
+    @apply py-[2rem] text-[1.5rem] font-bold
+  }
+  .about-slider-holder{
+    @apply flex gap-[5rem]
+  }
+
+  .lesson{
+    @apply my-[7rem] bg-lessonBg
+  }
+  .lesson-wrapper h1{
+    @apply flex justify-center text-[2rem] text-primary font-extrabold
+  }
+  .lesson-wrapper h2{
+    @apply  flex justify-center mx-auto text-[1.7rem] mb-[2rem] font-bold
+  }
+  .lesson-card{
+    @apply relative mx-[5rem] mb-[2rem] shadow-2xl rounded-lg
+  }
+  .lesson-img p{
+    @apply flex justify-between mx-[1rem] text-[1.2rem] absolute top-[1rem]
+  }
+  .lesson-img span{
+    @apply p-[.5rem] bg-primary text-light rounded-lg
+  }
+  .lesson-img i{
+    @apply text-primary p-[.5rem] rounded-lg bg-light text-[1.5rem]
+  }
+  .lesson-ratings{
+    @apply flex py-[1rem]
+  }
+  .lesson-ratings p{
+    @apply ml-[1rem]
+  }
+  .lesson-ratings p span{
+    @apply italic
+  }
+  .lesson-ratings ul{
+    @apply flex text-primary gap-[.5rem]
+  }
+  .lesson-details{
+    @apply mx-[1rem]
+  }
+  .lesson-details h3{
+    @apply text-[1.2rem] font-bold pb-[1rem]
+  }
+  .author{
+    @apply flex mb-[2rem] 
+  }
+  .author p{
+    @apply ml-[1rem] text-[1.2rem] 
+  }
+  .author p a{
+    @apply text-bgblue
+  }
+  .author img{
+    @apply rounded-full h-[2rem]
+  }
+  .lesson-price{
+    @apply border-t py-[1rem]
+  }
+  .lesson-price h6{
+    @apply font-medium flex justify-between text-[1.2rem] text-bgblue
+  }
+  .lesson-price p{
+    @apply text-black
+  }
+  .instructor-wrapper{
+    @apply px-[5rem]
+  }
+  .instructor-wrapper h1{
+    @apply  flex text-[2rem] text-primary font-extrabold
+  }
+  .instructor-wrapper h2{
+    @apply flex mx-auto mb-[2rem] text-[1.7rem] font-bold
+  }
+  .instructor-details h2{
+    @apply flex justify-center
+  }
+  .instructor-details h3{
+    @apply flex justify-center text-[1.2rem] text-gray-600 pb-[1rem] border-b
+  }
+  .instructor-card-list{
+    @apply relative mb-[2rem] shadow-2xl rounded-lg border border-primary hover:border-none
+  }
+  .instructor-img{
+    @apply flex justify-center
+  }
+  .instructor-socials{
+    @apply flex justify-center
+  }
+  .instructor-socials ul{
+    @apply flex gap-[1rem] pt-[1rem] pb-[3rem]
+  }
+  .instructor-socials ul li{
+    @apply px-[1rem] py-[.5rem] bg-bggreen rounded-xl text-primary text-[1.2rem]
+  }
+  .facility{
+    @apply px-[10rem]
+  }
+
+  .facility-wrapper h1{
+    @apply flex justify-center text-[1.5rem] text-primary font-extrabold
+  }
+  .facility-wrapper h2{
+    @apply flex justify-center mx-auto mb-[2rem] text-[1.5rem] font-bold
+  }
+  .facility-card{
+    @apply border border-primary hover:border-none py-[3rem] mb-[2rem] 
+  }
+  .facility-card img{
+    @apply  mx-auto
+  }
+  .facility-card h3{
+    @apply flex justify-center text-[1.4rem] font-semibold py-[1rem]
+  }
+  .facility-card h6{
+    @apply flex justify-center text-gray-500
+  }
+
+  .news{
+    @apply mx-[5rem]
+  }
+  .news-wrapper h4{
+    @apply text-[1.7rem] font-bold text-primary
+  }
+  .news-wrapper h3{
+    @apply text-[1.5rem] font-semibold w-[28rem] mb-[1rem]
+  }
+  .news-details h5{
+    @apply px-[1rem] text-[1.2rem] font-semibold py-[1rem]
+  }
+  .news-category{
+    @apply px-[1rem] text-primary mb-[2rem] flex align-middle gap-[2rem]
+  }
+  .news-img{
+    @apply pt-[1rem] flex w-[40rem] h-[28.1rem]
+  }
+  .news-list{
+    @apply shadow-2xl py-[2rem]
+  }
+  .btn-trans-black{
+    @apply w-[10rem] ml-[1rem]
+  }
+
+  .testimonial{
+    @apply py-[7rem] mx-[5rem]
+  }
+  .testimonial-img{
+    @apply flex justify-center w-[32rem] mx-auto
+  }
+  .testimonial-holder h1{
+    @apply flex justify-center mt-[5rem] text-[1.5rem] text-primary font-extrabold
+  }
+  .testimonial-holder h2{
+    @apply flex text-center mb-[1rem] justify-center text-[1.5rem]  font-extrabold
+  }
+  .testimonial-ratings ul{
+    @apply flex mt-[2rem] mb-[1rem] text-[1.2rem] gap-[.5rem] text-primary
+  }
+  .testimonial-list p{
+    @apply text-[1.2rem] text-gray-500 w-[28rem]
+  }
+  .testimonial-person{
+    @apply flex mt-[1rem]
+  }
+  .testimonial-person-img img{
+    @apply w-[4rem] h-[4rem]
+  }
+  .testimonial-name{
+    @apply items-center ml-[1rem] align-middle
+  }
+  .testimonial-name h5{
+    @apply font-bold
+  }
+  .testimonial-name h6{
+    @apply text-primary font-semibold
   }
 }
 
