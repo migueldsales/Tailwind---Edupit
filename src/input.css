@@ -18,7 +18,7 @@ body{
     @apply bg-light lg:bg-darkblue
   }
 .header-wrapper{
-    @apply max-w-[90rem] mx-auto
+    @apply max-w-[90rem] lg:mx-[6rem]
 }
 .branding{
     @apply flex justify-center my-[1rem] lg:hidden
@@ -177,22 +177,22 @@ body{
     @apply text-light
   }
   .banner{
-    @apply bg-bannerBg min-h-[42rem] lg:min-h-[48rem] py-[5rem]
+    @apply bg-bannerBg min-h-[42rem] lg:min-h-[65rem] py-[5rem] lg:px-[6rem]
   }
   .banner-text {
-    @apply absolute lg:text-left lg:relative lg:mx-[15rem] lg:w-[50rem] z-10 top-[35%] lg:top-[20%] mx-[2rem] text-light text-center items-center 
+    @apply absolute lg:text-left lg:relative lg:mx-[15rem] lg:w-[50rem] z-10 top-[35%] lg:top-[20%] mx-[2rem] text-light text-center items-center lg:ml-[3rem] 
   }
   .banner-img{
     @apply hidden lg:block
   }
   .banner-text h1{
-    @apply text-[1.5rem] font-extrabold lg:text-[4rem]
+    @apply text-[1.5rem] font-extrabold lg:text-[3.5rem]
   }
   .banner-text h3{
     @apply text-[1.3rem] mt-[2rem] lg:text-[1.2rem] lg:w-[40rem]
   }
   .banner-btn{
-    @apply flex mt-[3rem] gap-[.2rem] justify-center lg:justify-start lg:gap-[1rem]
+    @apply flex mt-[3rem] gap-[.2rem] justify-center lg:justify-start
   }
   .banner-wrapper span{
     @apply absolute top-[30%] text-light text-[4rem] font-black opacity-5
@@ -203,16 +203,19 @@ body{
     lg:left-[14.7rem] lg:top-[38%] lg:text-[8rem]
   }
   .banner-slider-content{
-    @apply lg:grid lg:grid-cols-2
+    @apply lg:grid lg:grid-cols-2 lg:mx-[6rem] lg:gap-[2rem]
+  }
+  .slider{
+    @apply px-[6rem]
   }
   .slider-card{
     @apply py-[7rem]
   }
   .slider-card-holder{
-    @apply grid gap-[2rem] justify-center 
+    @apply grid gap-[2rem] justify-center lg:flex mt-[-15rem]
   }
   .slider-card-list{
-    @apply bg-light border-2 border-primary rounded-xl py-[4rem] w-[25rem] block justify-center text-center hover:shadow-2xl transition-all duration-500 ease-in-out
+    @apply bg-light border-2 border-primary border-opacity-50	 rounded-xl py-[4rem] w-[25rem] lg:w-[20rem] block justify-center text-center hover:shadow-2xl transition-all duration-500 ease-in-out
   }
   .slider-card-list img{
     @apply flex justify-center mx-auto items-center
@@ -224,42 +227,64 @@ body{
     @apply text-primary text-[1rem] font-medium
   }
 
+  .about{
+    @apply lg:px-[6rem] lg:flex lg:justify-center
+  }
   .about-img{
-    @apply py-[5rem] flex justify-center
+    @apply  lg:h-[35rem] py-[5rem] lg:py-0 flex justify-center lg:mr-[5rem]
+  }
+  .about-wrapper{
+    @apply lg:grid lg:grid-cols-2
   }
   .about-text{
-    @apply  px-[1rem]
+    @apply px-[1rem] lg:relative
   }
+
   .about-text h1{
-    @apply text-[1.5rem] font-extrabold text-primary
+    @apply text-[1.5rem] lg:text-[1.2rem] font-extrabold text-primary
   }
   .about-text h2{
-    @apply text-[1.5rem] mb-[2rem] font-bold
+    @apply text-[1.5rem] lg:text-[2.5rem] lg:w-[35rem] mb-[2rem] font-bold
   }
   .about-text h6{
-    @apply pb-[2rem] ps-[1rem] w-[34rem] text-[1.4rem] text-gray-400 border-l-[3px] border-primary
+    @apply pb-[2rem] ps-[1rem] max-w-[34rem] lg:max-w-[35rem] text-[1.4rem] text-gray-400 border-l-[3px] border-primary
   }
   .about-text p{
-    @apply text-[1.2rem] mt-[1rem]  text-gray-500
+    @apply text-[1.2rem] mt-[1rem] lg:w-[35rem] text-gray-500
   }
   .about-text h3{
-    @apply py-[2rem] text-[1.5rem] font-bold
+    @apply pt-[2rem] text-[1.5rem] font-bold
+  }
+  .success-bar{
+    @apply lg:absolute lg:left-[1rem] my-[1rem] lg:mt-[1rem] lg:mb-[2rem] flex text-start
+  }
+  .success-bar-circle{
+      @apply h-[3px] w-[90px] bg-primary my-0 mx-auto relative rounded-[30px]
+  }
+  .success-bar-circle::before{
+      @apply content-[""] absolute left-0 top-[50%] transform translate-y-[-50%] border-primary border-[6px] rounded-[50%] bg-[#1c1b1b] animate-sliding1
+  }
+  .success-bar-circle::after{
+      @apply content-[""] absolute right-0 top-[50%] transform translate-y-[-50%] border-primary border-[6px] rounded-[50%] bg-[#1c1b1b] animate-sliding2
   }
   .about-slider-holder{
-    @apply flex gap-[5rem]
+    @apply flex gap-[5rem] lg:mt-[3rem]
   }
 
   .lesson{
-    @apply my-[7rem] bg-lessonBg
+    @apply my-[7rem] bg-lessonBg lg:px-[5rem]
   }
   .lesson-wrapper h1{
-    @apply mx-[1rem] flex justify-center text-[1.5rem] text-primary font-extrabold
+    @apply mx-[1rem] flex justify-center text-[1.5rem] lg:text-[1.2rem] text-primary font-extrabold
   }
   .lesson-wrapper h2{
-    @apply  flex justify-center mx-auto text-[1.7rem] mb-[2rem] font-bold text-center w-[25rem]
+    @apply  flex justify-center mx-auto text-[1.7rem] lg:text-[2.5rem] mb-[2rem] font-bold text-center w-[25rem] lg:w-[35rem] lg:py-[1rem]
   }
   .lesson-card{
-    @apply relative mx-[1rem] my-[2rem] shadow-2xl rounded-lg
+    @apply lg:w-[30rem] relative mx-[1rem] my-[2rem] shadow-2xl rounded-lg
+  }
+  .lesson-card-holder{
+    @apply lg:grid lg:grid-cols-3 lg:pb-[3rem] lg:mx-[5rem]
   }
   .lesson-img p{
     @apply  mx-[1rem] text-[1.2rem] absolute top-[1rem] right-0
@@ -309,14 +334,20 @@ body{
   .lesson-price p{
     @apply text-black
   }
+  .instructor{
+    @apply lg:px-[11rem] py-[5rem]
+  }
   .instructor-wrapper{
     @apply px-[1rem]
   }
   .instructor-wrapper h1{
-    @apply  flex text-[2rem] text-primary font-extrabold
+    @apply  flex text-[2rem] lg:text-[1.2rem] text-primary font-extrabold
   }
   .instructor-wrapper h2{
-    @apply mt-[2rem] text-[1.5rem] font-bold w-[20rem]
+    @apply mt-[1rem] text-[1.5rem] lg:text-[2.5rem] font-bold w-[20rem] lg:w-[30rem] lg:mb-[2rem]
+  }
+  .instructor-card-holder{
+    @apply lg:grid lg:grid-cols-3
   }
   .instructor-details h2{
     @apply flex justify-center mx-auto
@@ -325,7 +356,7 @@ body{
     @apply flex justify-center text-[1.2rem] text-gray-600 pb-[1rem] border-b
   }
   .instructor-card-list{
-    @apply relative py-[2rem] mb-[2rem] shadow-2xl rounded-lg border border-primary hover:border-none
+    @apply relative py-[2rem] mb-[2rem] shadow-2xl rounded-lg border border-primary border-opacity-50 hover:border-none lg:w-[30rem]
   }
   .instructor-img{
     @apply flex justify-center rounded-full
@@ -340,17 +371,20 @@ body{
     @apply px-[1rem] py-[.5rem] bg-bggreen rounded-xl text-primary text-[1.2rem]
   }
   .facility{
-    @apply px-[1rem] py-[2rem]
+    @apply px-[1rem] py-[2rem] lg:py-[5rem]
   }
 
   .facility-wrapper h1{
-    @apply flex justify-center text-[1.5rem] text-primary font-extrabold
+    @apply flex justify-center text-[1.5rem] lg:text-[1.2rem] text-primary font-extrabold
   }
   .facility-wrapper h2{
-    @apply flex justify-center text-center mx-auto mb-[2rem] text-[1.5rem] font-bold
+    @apply flex justify-center text-center mx-auto mb-[2rem] text-[1.5rem] lg:text-[2.5rem] font-bold lg:w-[38rem]
+  }
+  .facility-card-holder{
+    @apply lg:grid lg:grid-cols-4 lg:gap-[1rem] lg:justify-center lg:px-[10rem]
   }
   .facility-card{
-    @apply border border-primary hover:border-none py-[3rem] mb-[2rem] 
+    @apply border border-primary hover:border-none py-[3rem] mb-[2rem]  lg:w-[20rem]
   }
   .facility-card img{
     @apply  mx-auto
@@ -363,13 +397,16 @@ body{
   }
 
   .news{
-    @apply mx-[1rem]
+    @apply mx-[1rem] lg:px-[10rem] lg:py-[5rem]
   }
   .news-wrapper h4{
-    @apply text-[1.7rem] font-bold text-primary
+    @apply text-[1.7rem] lg:text-[1.2rem] font-bold text-primary
   }
   .news-wrapper h3{
-    @apply text-[1.5rem] font-semibold w-[28rem] mb-[1rem]
+    @apply text-[1.5rem] lg:text-[2.5rem] font-semibold w-[28rem] mb-[1rem] lg:w-[45rem]
+  }
+  .news-holder{
+    @apply lg:mt-[3rem] lg:grid lg:grid-cols-3 lg:gap-[2rem]
   }
   .news-details h5{
     @apply px-[1rem] text-[1.2rem] font-semibold py-[1rem]
@@ -378,26 +415,29 @@ body{
     @apply px-[1rem] text-primary mb-[2rem] flex align-middle gap-[2rem]
   }
   .news-img{
-    @apply pt-[1rem] flex w-[40rem] h-[28.1rem]
+    @apply flex max-w-[40rem] lg:max-w-[41rem] h-[28.1rem] lg:h-[31rem]
   }
   .news-list{
-    @apply shadow-2xl py-[2rem]
+    @apply relative shadow-2xl py-[2rem] lg:shadow-xl
   }
   .btn-trans-black{
     @apply w-[10rem] ml-[1rem]
   }
 
   .testimonial{
-    @apply py-[7rem] mx-[1rem]
+    @apply py-[7rem] mx-[1rem] bg-bggreenlight
+  }
+  .testimonial-wrapper{
+    @apply lg:flex
   }
   .testimonial-img{
     @apply flex justify-center w-[28rem] mx-auto
   }
   .testimonial-holder h1{
-    @apply flex justify-center mt-[2rem] text-[1.5rem] text-primary font-extrabold
+    @apply flex justify-center mt-[2rem] text-[1.5rem] lg:text-[1.2rem] text-primary font-extrabold
   }
   .testimonial-holder h2{
-    @apply flex text-center mb-[1rem] justify-center text-[1.5rem]  font-extrabold
+    @apply flex text-center mb-[1rem] justify-center text-[1.5rem] lg:text-[2.5rem] font-extrabold lg:w-[40rem]
   }
   .testimonial-ratings ul{
     @apply flex mt-[2rem] mb-[1rem] text-[1.2rem] gap-[.5rem] text-primary
@@ -420,7 +460,148 @@ body{
   .testimonial-name h6{
     @apply text-primary font-semibold
   }
+
+  .announcement{
+    @apply bg-bggreenlight py-[1rem] mb-[10rem] mx-[1rem]
+  }
+  .announcement-wrapper h1{
+    @apply flex justify-center mt-[2rem] text-[1.5rem] text-primary font-extrabold
+  }
+  .announcement-wrapper h2{
+    @apply flex lg:mx-auto text-center mb-[1rem] lg:text-[2.5rem] justify-center text-[1.5rem]  font-extrabold w-[25rem] lg:w-[35rem]
+  }
+  .announcement-card-holder{
+    @apply lg:flex lg:gap-[2rem] lg:justify-center
+  }
+  .announcement-card-list{
+    @apply lg:flex border border-primary border-opacity-50 p-[2rem] mb-[5rem] shadow-xl
+  }
+  .announcement-details{
+    @apply lg:ml-[2rem] lg:w-[22rem]
+  }
+  .announcement-details h6{
+    @apply text-primary font-semibold mt-[1rem]
+  }
+  .announcement-details h3{
+    @apply py-[1rem] text-[1.5rem] font-extrabold
+  }
+  .announcement-toggle{
+    @apply bg-primary px-[.8rem] py-[.5rem] rounded-full w-fit text-light
+  }
+  .announcement-popup{
+    @apply hidden
+  }
+  .newsletter{
+    @apply relative lg:mx-auto bg-primary z-20 py-[5rem] px-[1rem] mx-[1rem] rounded-xl lg:w-[70rem]
+  }
+  .newsletter-wrapper{
+    @apply lg:flex lg:justify-between lg:mx-[1rem]
+  }
+  .newsletter-calltoactions{
+    @apply lg:flex lg:items-center
+  }
+  .newsletter input{
+    @apply w-full lg:mx-[5rem] py-[1rem] my-[1rem] lg:my-0 rounded-lg
+  }
+  .newsletter input::placeholder{
+    @apply ps-[1rem]
+  }
+  .newsletter-text h1{
+    @apply text-[1.5rem] lg:text-[2.5rem] text-light font-extrabold
+  }
+  .newsletter-text h3{
+    @apply text-[1.2rem] text-light py-[1rem]
+  }
+  .btn-black{
+    @apply bg-secondary hover:bg-darkblue py-[1rem] lg:py-[1.2rem] lg:translate-x-[-5px] px-[2rem] lg:px-[5rem] rounded-md lg:rounded-l-none transition-all ease-in-out duration-500
+  }
+  .btn-black a{
+    @apply text-light flex justify-center
+  }
+
+
+
+
+  /*-----------------------middle-footer----------------------*/
+.footer-links {
+  @apply bg-bgblue mt-[-8rem] lg:justify-evenly lg:px-[20rem]
 }
+.links-wrapper{
+  @apply lg:pt-[10rem] border-b
+}
+.description img{
+  @apply flex justify-center mx-auto pt-[15rem] pb-[2rem]
+  lg:pt-[1.8rem]
+}
+.description{
+  @apply lg:w-[12rem] 
+}
+.description p{
+  @apply pb-[1rem] text-[1.2rem] 
+}
+.links-holder{
+  @apply lg:flex lg:justify-center lg:gap-[5rem]
+}
+.links-row{
+  @apply text-center lg:text-left text-white
+  lg:flex lg:justify-between
+}
+.links-socials{
+  @apply py-[1.5rem]
+}
+.links-socials i{
+  @apply border-[1px] border-white p-[.5rem] rounded hover:bg-primary transition-all duration-500 ease-in-out
+}
+.links:first-child{
+  @apply lg:mt-[2rem]
+}
+.links:last-child{
+  @apply mt-[2rem]
+}
+.links h2{
+  @apply text-[1.5rem] font-bold pb-[1.5rem]
+}
+.menu li a{
+  @apply text-[1.2rem]
+}
+.menu li {
+  @apply pb-[1rem] hover:text-primary transition-all
+}
+.working-hours{
+  @apply mx-[1rem] pb-[5rem] lg:w-[20rem]
+}
+.working-hours h2{
+  @apply text-[1.5rem] font-bold pt-[1.5rem] pb-[1rem]
+  lg:pt-[2rem]
+}
+.wh-table{
+  @apply flex py-[.5rem] justify-between text-[1.2rem] border-b 
+}
+
+.footer{
+  @apply bg-bgblue py-[2rem] lg:px-[20rem]
+}
+.footer-wrapper{
+    @apply  relative text-white lg:flex lg:justify-between
+}
+.copyright p{
+    @apply flex justify-center pb-[1rem] pt-[1rem] text-[1rem]
+}
+.footer-text ul{
+    @apply flex justify-center  gap-[1rem] 
+    
+}
+.text-right li{
+    @apply  hover:text-primary transition-all text-[1rem]
+}
+.row{
+    @apply border-t-[1px]
+lg:flex lg:justify-between lg:items-center
+}
+
+}
+
+
 
 
 
