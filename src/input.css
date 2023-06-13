@@ -228,7 +228,7 @@ body{
     @apply py-[5rem] flex justify-center
   }
   .about-text{
-    @apply  px-[5rem]
+    @apply  px-[1rem]
   }
   .about-text h1{
     @apply text-[1.5rem] font-extrabold text-primary
@@ -237,7 +237,7 @@ body{
     @apply text-[1.5rem] mb-[2rem] font-bold
   }
   .about-text h6{
-    @apply pb-[2rem] w-[34rem] text-[1.4rem] text-gray-400 border-l-[3px] border-primary
+    @apply pb-[2rem] ps-[1rem] w-[34rem] text-[1.4rem] text-gray-400 border-l-[3px] border-primary
   }
   .about-text p{
     @apply text-[1.2rem] mt-[1rem]  text-gray-500
@@ -253,19 +253,19 @@ body{
     @apply my-[7rem] bg-lessonBg
   }
   .lesson-wrapper h1{
-    @apply flex justify-center text-[2rem] text-primary font-extrabold
+    @apply mx-[1rem] flex justify-center text-[1.5rem] text-primary font-extrabold
   }
   .lesson-wrapper h2{
-    @apply  flex justify-center mx-auto text-[1.7rem] mb-[2rem] font-bold
+    @apply  flex justify-center mx-auto text-[1.7rem] mb-[2rem] font-bold text-center w-[25rem]
   }
   .lesson-card{
-    @apply relative mx-[5rem] mb-[2rem] shadow-2xl rounded-lg
+    @apply relative mx-[1rem] my-[2rem] shadow-2xl rounded-lg
   }
   .lesson-img p{
-    @apply flex justify-between mx-[1rem] text-[1.2rem] absolute top-[1rem]
+    @apply  mx-[1rem] text-[1.2rem] absolute top-[1rem] right-0
   }
   .lesson-img span{
-    @apply p-[.5rem] bg-primary text-light rounded-lg
+    @apply absolute top-[1rem] left-[1rem] p-[.5rem] bg-primary text-light rounded-lg
   }
   .lesson-img i{
     @apply text-primary p-[.5rem] rounded-lg bg-light text-[1.5rem]
@@ -304,50 +304,50 @@ body{
     @apply border-t py-[1rem]
   }
   .lesson-price h6{
-    @apply font-medium flex justify-between text-[1.2rem] text-bgblue
+    @apply font-bold flex justify-between text-[1rem] text-bgblue
   }
   .lesson-price p{
     @apply text-black
   }
   .instructor-wrapper{
-    @apply px-[5rem]
+    @apply px-[1rem]
   }
   .instructor-wrapper h1{
     @apply  flex text-[2rem] text-primary font-extrabold
   }
   .instructor-wrapper h2{
-    @apply flex mx-auto mb-[2rem] text-[1.7rem] font-bold
+    @apply mt-[2rem] text-[1.5rem] font-bold w-[20rem]
   }
   .instructor-details h2{
-    @apply flex justify-center
+    @apply flex justify-center mx-auto
   }
   .instructor-details h3{
     @apply flex justify-center text-[1.2rem] text-gray-600 pb-[1rem] border-b
   }
   .instructor-card-list{
-    @apply relative mb-[2rem] shadow-2xl rounded-lg border border-primary hover:border-none
+    @apply relative py-[2rem] mb-[2rem] shadow-2xl rounded-lg border border-primary hover:border-none
   }
   .instructor-img{
-    @apply flex justify-center
+    @apply flex justify-center rounded-full
   }
   .instructor-socials{
     @apply flex justify-center
   }
   .instructor-socials ul{
-    @apply flex gap-[1rem] pt-[1rem] pb-[3rem]
+    @apply flex gap-[1rem] pt-[1rem]
   }
   .instructor-socials ul li{
     @apply px-[1rem] py-[.5rem] bg-bggreen rounded-xl text-primary text-[1.2rem]
   }
   .facility{
-    @apply px-[10rem]
+    @apply px-[1rem] py-[2rem]
   }
 
   .facility-wrapper h1{
     @apply flex justify-center text-[1.5rem] text-primary font-extrabold
   }
   .facility-wrapper h2{
-    @apply flex justify-center mx-auto mb-[2rem] text-[1.5rem] font-bold
+    @apply flex justify-center text-center mx-auto mb-[2rem] text-[1.5rem] font-bold
   }
   .facility-card{
     @apply border border-primary hover:border-none py-[3rem] mb-[2rem] 
@@ -363,7 +363,7 @@ body{
   }
 
   .news{
-    @apply mx-[5rem]
+    @apply mx-[1rem]
   }
   .news-wrapper h4{
     @apply text-[1.7rem] font-bold text-primary
@@ -388,13 +388,13 @@ body{
   }
 
   .testimonial{
-    @apply py-[7rem] mx-[5rem]
+    @apply py-[7rem] mx-[1rem]
   }
   .testimonial-img{
-    @apply flex justify-center w-[32rem] mx-auto
+    @apply flex justify-center w-[28rem] mx-auto
   }
   .testimonial-holder h1{
-    @apply flex justify-center mt-[5rem] text-[1.5rem] text-primary font-extrabold
+    @apply flex justify-center mt-[2rem] text-[1.5rem] text-primary font-extrabold
   }
   .testimonial-holder h2{
     @apply flex text-center mb-[1rem] justify-center text-[1.5rem]  font-extrabold
