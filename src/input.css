@@ -601,7 +601,7 @@ body{
 }
 
 .footer{
-  @apply flex justify-center bg-bgblue py-[2rem] lg:px-[20rem]
+  @apply flex lg:block justify-center bg-bgblue py-[2rem] lg:px-[20rem]
 }
 .footer-wrapper{
     @apply  relative text-white lg:flex lg:justify-between
@@ -610,16 +610,17 @@ body{
     @apply flex justify-center pb-[1rem] pt-[1rem] text-[1rem]
 }
 .footer-text ul{
-    @apply flex justify-center  gap-[1rem] 
+    @apply flex justify-center gap-[1rem] 
     
 }
-.text-right li{
+.footer-text li{
     @apply  hover:text-primary transition-all text-[1rem]
 }
 .row{
     @apply border-t-[1px]
 lg:flex lg:justify-between lg:items-center
 }
+
 
 }
 
