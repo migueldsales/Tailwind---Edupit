@@ -15,7 +15,8 @@ module.exports = {
         bggreenlight: '#f7fdfb',
       },
       fontFamily:{
-        'Poppins' :['Poppins', 'sans-serif']
+        'Poppins' :['Poppins', 'sans-serif'],
+        'Raleway' :['Raleway', 'sans-serif']
       },
       backgroundImage: {
         'bannerBg': "url('./img/slider-bg2.jpg')",
