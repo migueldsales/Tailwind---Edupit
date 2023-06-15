@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="/dist/output.css" rel="stylesheet">
   <script src="https://kit.fontawesome.com/3c172b1032.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -325,127 +326,131 @@
         </div>
         </div>
     </div>
-    <div class="header__wrapper">
-        <div class="branding">
-            <picture>
-                <source media="(max-width:500px)" srcset="./img/logo.png">
-                <source media="(min-width:1080px)" srcset="./img/logo2.png">
-                <img src="./img/logo.png" alt="Flowers" style="width:auto;">
-              </picture>
-        </div>
-        <div class="header__nav">
-            <div class="header__nav__title">
-                <h2>MENU</h2>
-                <div class="toggle__menu">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
+    <div class="main-header-content">
+        <div class="header__wrapper">
+            <div class="branding">
+                <picture>
+                    <source media="(max-width:500px)" srcset="./img/logo.png">
+                    <source media="(min-width:1080px)" srcset="./img/logo2.png">
+                    <img src="./img/logo.png" alt="Flowers" style="width:auto;">
+                  </picture>
             </div>
-            <nav>
-                <li class="drop__nav group">
-                    <h4><p>HOME</p>
-                    <div class="drop__toggle">
+            <div class="header__nav">
+                <div class="header__nav__title">
+                    <h2>MENU</h2>
+                    <div class="toggle__menu">
                         <span></span>
-                        <span></span>
-                    </div>
-                    </h4>
-                    <div class="drop__content lg:group-hover:opacity-[1]  lg:top-[5.5rem] lg:h-fit">
-                        <ul>
-                            <li><a href="">Home One</a></li>
-                            <li><a href="">Home Two</a></li>
-                        </ul>
-                    </div>
-                </li>
-                <li class="drop__nav group">
-                    <h4><p>ABOUT</p>
-                    <div class="drop__toggle">
                         <span></span>
                         <span></span>
                     </div>
-                    </h4>
-                    <div class="drop__content lg:group-hover:opacity-[1] lg:top-[5.5rem] lg:h-fit">
-                        <ul>
-                            <li><a href="">About Style 02</a></li>
-                            <li><a href="">About Style 03</a></li>
-                        </ul>
-                    </div>
-                </li>
-                <li class="drop__nav group">
-                    <h4><p>COURSES</p>
-                    <div class="drop__toggle">
-                        <span></span>
-                        <span></span>
-                    </div>
-                    </h4>
-                    <div class="drop__content lg:group-hover:opacity-[1] lg:top-[5.5rem] lg:h-fit">
-                        <ul>
-                            <li><a href="">Instructor Registration</a></li>
-                            <li><a href="">Student Registration</a></li>
-                            <li><a href="">Dashboard</a></li>
-                        </ul>
-                    </div>
-                </li>
-                <li class="drop__nav group">
-                    <h4><p>ACADEMICS</p>
-                    <div class="drop__toggle">
-                        <span></span>
-                        <span></span>
-                    </div>
-                    </h4>
-                    <div class="drop__content lg:group-hover:opacity-[1] lg:top-[5.5rem] lg:h-fit">
-                        <ul>
-                            <li><a href="">Admission</a></li>
-                            <li><a href="">Shop</a></li>
-                            <li><a href="">Elements</a></li>
-                            <li><a href="">Service Style</a></li>
-                            <li><a href="">Team</a></li>
-                            <li><a href="">Pricing Plan</a></li>
-                            <li><a href="">Why Choose Us</a></li>
-                            <li><a href="">Countdown</a></li>
-                            <li><a href="">Counter</a></li>
-                            <li><a href="">Case Study</a></li>
-                            <li><a href="">FAQs</a></li>
-                        </ul>
-                    </div>
-                </li>
-                <li class="drop__nav group">
-                    <h4><p>BLOG</p>
-                    <div class="drop__toggle">
-                        <span></span>
-                        <span></span>
-                    </div>
-                    </h4>
-                    <div class="drop__content lg:group-hover:opacity-[1] lg:top-[5.5rem] lg:h-fit">
-                        <ul>
-                            <li><a href="">Blog Left Sidebar</a></li>
-                            <li><a href="">Blog Right Sidebar</a></li>
-                            <li><a href="">Blog Left 2 Column</a></li>
-                            <li><a href="">BlogRight 2 Column</a></li>
-                            <li><a href="">Blog Both Sidebar</a></li>
-                        </ul>
-                    </div>
-                </li>
-                <li class="drop__nav group">
-                    <h4><p>CONTACT</p>
-                    <div class="drop__toggle">
-                        <span></span>
-                        <span></span>
-                    </div>
-                    </h4>
-                    <div class="drop__content lg:group-hover:opacity-[1] lg:top-[5.5rem] lg:h-fit">
-                        <ul>
-                            <li><a href="">Contact Style 02</a></li>
-                            <li><a href="">Contact Style 03</a></li>
-                            <li><a href="">Contact Style 04</a></li>
-                            <li><a href="">Contact Style 05</a></li>
-                        </ul>
-                    </div>
-                </li>
-                <div class="btn-primary">
-                    <a href="" class="free btn--solid">Get A Quote</a>
                 </div>
-            </nav>
+                <nav>
+                    <li class="drop__nav group">
+                        <h4><p>Home</p>
+                        <div class="drop__toggle">
+                            <span></span>
+                            <span></span>
+                        </div>
+                        </h4>
+                        <div class="drop__content lg:group-hover:opacity-[1] lg:h-fit">
+                            <ul>
+                                <li><a href="">Home One</a></li>
+                                <li><a href="">Home Two</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="drop__nav group">
+                        <h4><p>About</p>
+                        <div class="drop__toggle">
+                            <span></span>
+                            <span></span>
+                        </div>
+                        </h4>
+                        <div class="drop__content lg:group-hover:opacity-[1] lg:h-fit">
+                            <ul>
+                                <li><a href="">About Style 02</a></li>
+                                <li><a href="">About Style 03</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="drop__nav group">
+                        <h4><p>Courses</p>
+                        <div class="drop__toggle">
+                            <span></span>
+                            <span></span>
+                        </div>
+                        </h4>
+                        <div class="drop__content lg:group-hover:opacity-[1] lg:h-fit">
+                            <ul>
+                                <li><a href="">Courses</a></li>
+                                <li><a href="">Instructor Registration</a></li>
+                                <li><a href="">Student Registration</a></li>
+                                <li><a href="">Dashboard</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="drop__nav group">
+                        <h4><p>Academics</p>
+                        <div class="drop__toggle">
+                            <span></span>
+                            <span></span>
+                        </div>
+                        </h4>
+                        <div class="drop__content lg:group-hover:opacity-[1] lg:h-fit">
+                            <ul>
+                                <li><a href="">Academics</a></li>
+                                <li><a href="">Admission</a></li>
+                                <li><a href="">Shop</a></li>
+                                <li><a href="">Elements</a></li>
+                                <li><a href="">Service Style</a></li>
+                                <li><a href="">Team</a></li>
+                                <li><a href="">Pricing Plan</a></li>
+                                <li><a href="">Why Choose Us</a></li>
+                                <li><a href="">Countdown</a></li>
+                                <li><a href="">Counter</a></li>
+                                <li><a href="">Case Study</a></li>
+                                <li><a href="">FAQs</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="drop__nav group">
+                        <h4><p>Blog</p>
+                        <div class="drop__toggle">
+                            <span></span>
+                            <span></span>
+                        </div>
+                        </h4>
+                        <div class="drop__content lg:group-hover:opacity-[1] lg:h-fit">
+                            <ul>
+                                <li><a href="">Blog Left Sidebar</a></li>
+                                <li><a href="">Blog Right Sidebar</a></li>
+                                <li><a href="">Blog Left 2 Column</a></li>
+                                <li><a href="">Blog Right 2 Column</a></li>
+                                <li><a href="">Blog Both Sidebar</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="drop__nav group">
+                        <h4><p>Contact</p>
+                        <div class="drop__toggle">
+                            <span></span>
+                            <span></span>
+                        </div>
+                        </h4>
+                        <div class="drop__content lg:group-hover:opacity-[1]  lg:h-fit">
+                            <ul>
+                                <li><a href="">Contact Style 02</a></li>
+                                <li><a href="">Contact Style 03</a></li>
+                                <li><a href="">Contact Style 04</a></li>
+                                <li><a href="">Contact Style 05</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <div class="btn-nav-primary">
+                        <a href="" class="free btn--solid">Get A Quote</a>
+                    </div>
+                </nav>
+            </div>
         </div>
     </div>
 </header>
@@ -453,71 +458,74 @@
 
 
   <section class="banner">
-    <div class="banner-wrapper">
-        <span class="text-stroke">EDUPIT</span>
-        <h6><span>EDUPIT</span></h6>
-        <div class="banner-slider">
-            <div class="banner-slider-content">
-                <div class="banner-text">
-                    <h1>Education Is the</h1>
-                    <h1>Backbone of the Nation.</h1>
-                    <h3>Get the most of reduction in your team's operating creates amazing UI/UX experiences.</h3>
-                    <div class="banner-btn">
-                        <div class="btn-primary">
-                            <a href="">START TRIAL</a>
-                        </div>
-                        <div class="btn-trans">
-                            <a href="">VIEW COURSES </a>
+        <div class="banner-wrapper">
+            <span class="text-stroke">EDUPIT</span>
+            <h6><span>EDUPIT</span></h6>
+            <div class="banner-slider">
+                <div class="banner-slider-content">
+                    <div class="banner-text">
+                        <h1>Education Is the</h1>
+                        <h1>Backbone of the Nation.</h1>
+                        <h3>Get the most of reduction in your team's operating creates amazing UI/UX experiences.</h3>
+                        <div class="banner-btn">
+                            <div class="btn-primary">
+                                <a href="">START TRIAL</a>
+                            </div>
+                            <div class="btn-trans">
+                                <a href="">VIEW COURSES </a>
+                            </div>
                         </div>
                     </div>
+                    <div class="banner-img">
+                        <img src="./img/right-img.png" alt="">
+                    </div>
                 </div>
-                <div class="banner-img">
-                    <img src="./img/right-img.png" alt="">
-                </div>
+                 <div class="banner-slider-content">
+                    <div class="banner-text">
+                        <h1>Education Is the</h1>
+                        <h1>Backbone of the Nation.</h1>
+                        <h3>Get the most of reduction in your team's operating creates amazing UI/UX experiences.</h3>
+                        <div class="banner-btn">
+                            <div class="btn-primary">
+                                <a href="">START TRIAL</a>
+                            </div>
+                            <div class="btn-trans">
+                                <a href="">VIEW COURSES </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="banner-img">
+                        <img src="./img/abbut-img.png" alt="">
+                    </div>
+                </div> 
             </div>
-             <div class="banner-slider-content">
-                <div class="banner-text">
-                    <h1>Education Is the</h1>
-                    <h1>Backbone of the Nation.</h1>
-                    <h3>Get the most of reduction in your team's operating creates amazing UI/UX experiences.</h3>
-                    <div class="banner-btn">
-                        <div class="btn-primary">
-                            <a href="">START TRIAL</a>
-                        </div>
-                        <div class="btn-trans">
-                            <a href="">VIEW COURSES </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="banner-img">
-                    <img src="./img/abbut-img.png" alt="">
-                </div>
-            </div> 
         </div>
-    </div>
   </section>
   <section class="slider-card">
-    <div class="slider-card-wrapper">
-        <div class="slider-card-holder">
-            <div class="slider-card-list">
-                <img src="./img/fi2.png" alt="">
-                <h3><a href="">Non-resident</a></h3>
-                <h2>Student(100)</h2>
-            </div>
-            <div class="slider-card-list">
-                <img src="./img/fi3.png" alt="">
-                <h3><a href="">Tuition is Free</a></h3>
-                <h2>Student(15)</h2>
-            </div>
-            <div class="slider-card-list">
-                <img src="./img/fi4.png" alt="">
-                <h3><a href="">Graduate Teacher</a></h3>
-                <h2>Student(40)</h2>
-            </div>
-            <div class="slider-card-list">
-                <img src="./img/fi1.png" alt="">
-                <h3><a href="">Residential</a></h3>
-                <h2>Student(500)</h2>
+    <div class="container">
+        <div class="slider-card-wrapper">
+            <div class="slider-card-holder">
+                <div class="slider-card-list">
+                    <img src="./img/fi2.png" alt="">
+                    <h3><a href="">Non-resident</a></h3>
+                    <h2>Student(100)</h2>
+                </div>
+                <div class="slider-card-list">
+                    <img src="./img/fi3.png" alt="">
+                    <h3><a href="">Tuition is Free</a></h3>
+                    <h2>Student(15)</h2>
+                </div>
+                <div class="slider-card-list">
+                    <img src="./img/fi4.png" alt="">
+                    <h3><a href="">Graduate Teacher</a></h3>
+                    <h2>Student(40)</h2>
+                </div>
+                <div class="slider-card-list">
+                    <img src="./img/fi1.png" alt="">
+                    <h3><a href="">Residential</a></h3>
+                    <h2>Student(500)</h2>
+                </div>
+                
             </div>
         </div>
     </div>
@@ -548,6 +556,9 @@
                 </div>
                 <div class="about-slider-list">
                     <img src="./img/cl4.jpg" alt="">
+                </div>
+                <div class="about-slider-list">
+                    <img src="./img/cl1.jpg" alt="">
                 </div>
             </div>
         </div>
@@ -727,7 +738,7 @@
 <section class="instructor">
     <div class="instructor-wrapper">
         <h1>Instructors</h1>
-        <h2>What do you want to learn today?</h2>
+        <h5>What do you want to learn today?</h5>
         <div class="instructor-card-holder">
             <div class="instructor-card-list">
                 <div class="instructor-img">
@@ -831,83 +842,85 @@
 </section>
 
 <section class="news">
-    <div class="news-wrapper">
-        <h4>NEWS</h4>
-        <h3>All the benefits you get in our latest news & blog</h3>
-        <div class="news-holder">
-            <div class="news-list">
-                <div class="news-img">
-                    <img src="./img/blog-thumb-01.jpg" alt="">
-                </div>
-                <div class="news-details">
-                    <h5>Transforming our in science facilities</h5>
-                    <div class="news-category">
-                        <a><i class="fa-solid fa-tag"></i> Architecture </a>
-                        <p><i class="fa-regular fa-calendar"></i> 05 May 2021</p>
-                </div>
-                <div class="btn-trans-black">
-                    <a href="">View More</a>
-                </div>
-                </div>
-            </div>
-            <div class="news-list">
-                <div class="news-img">
-                    <img src="./img/blog-thumb-02.jpg" alt="">
-                </div>
-                <div class="news-details">
-                    <h5>We believe everyone has capacity is a place </h5>
-                    <div class="news-category">
-                        <a><i class="fa-solid fa-tag"></i> Chemistry </a>
-                        <p><i class="fa-regular fa-calendar"></i> 05 May 2021</p>
+    <div class="container">
+        <div class="news-wrapper">
+            <h4>NEWS</h4>
+            <h3>All the benefits you get in our latest news & blog</h3>
+            <div class="news-holder">
+                <div class="news-list">
+                    <div class="news-img">
+                        <img src="./img/blog-thumb-01.jpg" alt="">
                     </div>
-                <div class="btn-trans-black">
-                    <a href="">View More</a>
-                </div>
-                </div>
-            </div>
-            <div class="news-list">
-                <div class="news-img">
-                    <img src="./img/blog-thumb-03.jpg" alt="">
-                </div>
-                <div class="news-details">
-                    <h5>How will you know success when it sohws</h5>
-                    <div class="news-category">
-                        <a><i class="fa-solid fa-tag"></i> Architecture </a>
-                        <p><i class="fa-regular fa-calendar"></i> 05 May 2021</p>
+                    <div class="news-details">
+                        <h5>Transforming our in science facilities</h5>
+                        <div class="news-category">
+                            <a><i class="fa-solid fa-tag"></i> Architecture </a>
+                            <p><i class="fa-regular fa-calendar"></i> 05 May 2021</p>
                     </div>
                     <div class="btn-trans-black">
                         <a href="">View More</a>
                     </div>
+                    </div>
                 </div>
-            </div>
-            <div class="news-list">
-                <div class="news-img">
-                    <img src="./img/blog-thumb-04.jpg" alt="">
+                <div class="news-list">
+                    <div class="news-img">
+                        <img src="./img/blog-thumb-02.jpg" alt="">
+                    </div>
+                    <div class="news-details">
+                        <h5>We believe everyone has capacity is a place </h5>
+                        <div class="news-category">
+                            <a><i class="fa-solid fa-tag"></i> Chemistry </a>
+                            <p><i class="fa-regular fa-calendar"></i> 05 May 2021</p>
+                        </div>
+                    <div class="btn-trans-black">
+                        <a href="">View More</a>
+                    </div>
+                    </div>
                 </div>
-                <div class="news-details">
-                    <h5>Where people develop their own potential</h5>
-                    <div class="news-category">
-                        <a><i class="fa-solid fa-tag"></i> Philosophy </a>
-                        <p><i class="fa-regular fa-calendar"></i> 05 May 2021</p>
+                <div class="news-list">
+                    <div class="news-img">
+                        <img src="./img/blog-thumb-03.jpg" alt="">
+                    </div>
+                    <div class="news-details">
+                        <h5>How will you know success when it shows</h5>
+                        <div class="news-category">
+                            <a><i class="fa-solid fa-tag"></i> Architecture </a>
+                            <p><i class="fa-regular fa-calendar"></i> 05 May 2021</p>
+                        </div>
+                        <div class="btn-trans-black">
+                            <a href="">View More</a>
+                        </div>
+                    </div>
                 </div>
-                <div class="btn-trans-black">
-                    <a href="">View More</a>
+                <div class="news-list">
+                    <div class="news-img">
+                        <img src="./img/blog-thumb-04.jpg" alt="">
+                    </div>
+                    <div class="news-details">
+                        <h5>Where people develop their own potential</h5>
+                        <div class="news-category">
+                            <a><i class="fa-solid fa-tag"></i> Philosophy </a>
+                            <p><i class="fa-regular fa-calendar"></i> 05 May 2021</p>
+                    </div>
+                    <div class="btn-trans-black">
+                        <a href="">View More</a>
+                    </div>
+                    </div>
                 </div>
-                </div>
-            </div>
-            <div class="news-list">
-                <div class="news-img">
-                    <img src="./img/blog-thumb-05.jpg" alt="">
-                </div>
-                <div class="news-details">
-                    <h5>We believe everyone has capacity is a place </h5>
-                    <div class="news-category">
-                        <a><i class="fa-solid fa-tag"></i> Physics </a>
-                        <p><i class="fa-regular fa-calendar"></i> 05 May 2021</p>
-                </div>
-                <div class="btn-trans-black">
-                    <a href="">View More</a>
-                </div>
+                <div class="news-list">
+                    <div class="news-img">
+                        <img src="./img/blog-thumb-05.jpg" alt="">
+                    </div>
+                    <div class="news-details">
+                        <h5>We believe everyone has capacity is a place </h5>
+                        <div class="news-category">
+                            <a><i class="fa-solid fa-tag"></i> Physics </a>
+                            <p><i class="fa-regular fa-calendar"></i> 05 May 2021</p>
+                    </div>
+                    <div class="btn-trans-black">
+                        <a href="">View More</a>
+                    </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -922,90 +935,93 @@
         <div class="testimonial-holder">
             <h1>Testimonial</h1>
             <h2>What our students have to say from real students</h2>
-            <div class="testimonial-list">
-                <div class="testimonial-ratings">
-                    <ul>
-                        <li><i class="fa-solid fa-star"></i></li>
-                        <li><i class="fa-solid fa-star"></i></li>
-                        <li><i class="fa-solid fa-star"></i></li>
-                        <li><i class="fa-solid fa-star"></i></li>
-                        <li><i class="fa-solid fa-star"></i></li>
-                    </ul>
-                </div>
-                <p>People who build their own home tend to be very courageous. These people are curious about life. they're thinking about</p>
-                <div class="testimonial-person">
-                    <div class="testimonial-person-img">
-                        <img src="./img/team-01.jpg" alt="">
+            <div class="testimonial-list-holder">
+                <div class="testimonial-list">
+                    <div class="testimonial-ratings">
+                        <ul>
+                            <li><i class="fa-solid fa-star"></i></li>
+                            <li><i class="fa-solid fa-star"></i></li>
+                            <li><i class="fa-solid fa-star"></i></li>
+                            <li><i class="fa-solid fa-star"></i></li>
+                            <li><i class="fa-solid fa-star"></i></li>
+                        </ul>
                     </div>
-                    <div class="testimonial-name">
-                        <h5>Kori Anderson</h5>
-                        <h6>Teacher</h6>
+                    <p>People who build their own home tend to be very courageous. These people are curious about life. they're thinking about</p>
+                    <div class="testimonial-person">
+                        <div class="testimonial-person-img">
+                            <img src="./img/team-01.jpg" alt="">
+                        </div>
+                        <div class="testimonial-name">
+                            <h5>Kori Anderson</h5>
+                            <h6>Teacher</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-list">
+                    <div class="testimonial-ratings">
+                        <ul>
+                            <li><i class="fa-solid fa-star"></i></li>
+                            <li><i class="fa-solid fa-star"></i></li>
+                            <li><i class="fa-solid fa-star"></i></li>
+                            <li><i class="fa-solid fa-star"></i></li>
+                            <li><i class="fa-solid fa-star"></i></li>
+                        </ul>
+                    </div>
+                    <p>People who build their own home tend to be very courageous. These people are curious about life. they're thinking about</p>
+                    <div class="testimonial-person">
+                        <div class="testimonial-person-img">
+                            <img src="./img/team-02.jpg" alt="">
+                        </div>
+                        <div class="testimonial-name">
+                            <h5>Liton Sakar</h5>
+                            <h6>Designer</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-list">
+                    <div class="testimonial-ratings">
+                        <ul>
+                            <li><i class="fa-solid fa-star"></i></li>
+                            <li><i class="fa-solid fa-star"></i></li>
+                            <li><i class="fa-solid fa-star"></i></li>
+                            <li><i class="fa-solid fa-star"></i></li>
+                            <li><i class="fa-solid fa-star"></i></li>
+                        </ul>
+                    </div>
+                    <p>People who build their own home tend to be very courageous. These people are curious about life. they're thinking about</p>
+                    <div class="testimonial-person">
+                        <div class="testimonial-person-img">
+                            <img src="./img/team-02.jpg" alt="">
+                        </div>
+                        <div class="testimonial-name">
+                            <h5>David Jection</h5>
+                            <h6>Designer</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-list">
+                    <div class="testimonial-ratings">
+                        <ul>
+                            <li><i class="fa-solid fa-star"></i></li>
+                            <li><i class="fa-solid fa-star"></i></li>
+                            <li><i class="fa-solid fa-star"></i></li>
+                            <li><i class="fa-solid fa-star"></i></li>
+                            <li><i class="fa-solid fa-star"></i></li>
+                        </ul>
+                    </div>
+                    <p>People who build their own home tend to be very courageous. These people are curious about life. they're thinking about</p>
+                    <div class="testimonial-person">
+                        <div class="testimonial-person-img">
+                            <img src="./img/team-02.jpg" alt="">
+                        </div>
+                        <div class="testimonial-name">
+                            <h5>Junction Raque</h5>
+                            <h6>Designer</h6>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="testimonial-list">
-                <div class="testimonial-ratings">
-                    <ul>
-                        <li><i class="fa-solid fa-star"></i></li>
-                        <li><i class="fa-solid fa-star"></i></li>
-                        <li><i class="fa-solid fa-star"></i></li>
-                        <li><i class="fa-solid fa-star"></i></li>
-                        <li><i class="fa-solid fa-star"></i></li>
-                    </ul>
-                </div>
-                <p>People who build their own home tend to be very courageous. These people are curious about life. they're thinking about</p>
-                <div class="testimonial-person">
-                    <div class="testimonial-person-img">
-                        <img src="./img/team-02.jpg" alt="">
-                    </div>
-                    <div class="testimonial-name">
-                        <h5>Liton Sakar</h5>
-                        <h6>Designer</h6>
-                    </div>
-                </div>
-            </div>
-            <div class="testimonial-list">
-                <div class="testimonial-ratings">
-                    <ul>
-                        <li><i class="fa-solid fa-star"></i></li>
-                        <li><i class="fa-solid fa-star"></i></li>
-                        <li><i class="fa-solid fa-star"></i></li>
-                        <li><i class="fa-solid fa-star"></i></li>
-                        <li><i class="fa-solid fa-star"></i></li>
-                    </ul>
-                </div>
-                <p>People who build their own home tend to be very courageous. These people are curious about life. they're thinking about</p>
-                <div class="testimonial-person">
-                    <div class="testimonial-person-img">
-                        <img src="./img/team-02.jpg" alt="">
-                    </div>
-                    <div class="testimonial-name">
-                        <h5>David Jection</h5>
-                        <h6>Designer</h6>
-                    </div>
-                </div>
-            </div>
-            <div class="testimonial-list">
-                <div class="testimonial-ratings">
-                    <ul>
-                        <li><i class="fa-solid fa-star"></i></li>
-                        <li><i class="fa-solid fa-star"></i></li>
-                        <li><i class="fa-solid fa-star"></i></li>
-                        <li><i class="fa-solid fa-star"></i></li>
-                        <li><i class="fa-solid fa-star"></i></li>
-                    </ul>
-                </div>
-                <p>People who build their own home tend to be very courageous. These people are curious about life. they're thinking about</p>
-                <div class="testimonial-person">
-                    <div class="testimonial-person-img">
-                        <img src="./img/team-02.jpg" alt="">
-                    </div>
-                    <div class="testimonial-name">
-                        <h5>Junction Raque</h5>
-                        <h6>Designer</h6>
-                    </div>
-                </div>
-            </div>
+           
         </div>
     </div>
 </section>
@@ -1150,55 +1166,48 @@
                 </ul>               
             </div>
     </div>
-    
 </footer>
-
-
-
 
 </body>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
 <script src="./script.js"></script>
+
 <script type="module">
-    import {tns} from './src/tiny-slider.js';
+    // import {tns} from './src/tiny-slider.js';
     var slider = tns({
         container: '.banner-slider',
-        items: 1,
-        autoplay: true,
-        axis: 'horizontal',
-        slideBy: 'page',
-        autoplayButtonOutput: false,
-        controls: false,
-        nav: true,
-        mouseDrag: true,
-        navPosition: 'bottom',
-          responsive: {
-            1024:{
+            items: 1,
+            slideBy: 'page',
+            autoplay: true,
+            axis: 'horizontal',
+            controls: false,
+            nav: true,
+            navPosition: 'bottom',
+            autoplayButtonOutput: false,
+            mouseDrag: true,
+            responsive: {
+                1024:{
                 nav: false,
                 controls: true,
-                mouseDrag: true,
-                controlsText:['<i class="fa-solid fa-arrow-left"></i>','<i class="fa-solid fa-arrow-right"></i>'],
+                controlsText: ['<i class="fa-solid fa-arrow-left-long"></i>', '<i class="fa-solid fa-arrow-right-long"></i>'],
                 slideBy: 1
+                }
             }
-          }
     });
     var slider = tns({
         container: '.slider-card-holder',
         items: 1,
-        autoplay: true,
-        axis: 'horizontal',
-        slideBy: 'page',
-        speed: 800,
-        autoplayButtonOutput: false,
-        controls: false,
-        nav: false,
-        mouseDrag: true,
-        navPosition: 'top',
+          slideBy: 'page',
+          autoplay: true,
+          controls: false,
+          nav: true,
+          speed: 800,
+          autoplayButtonOutput: false,
           responsive: {
             1024:{
                 items: 4,
                 controls: true,
-                controlsText: ['<i class="fa-solid fa-arrow-left"></i>', '<i class="fa-solid fa-arrow-right"></i>'],
+                controlsText: ['<i class="fa-solid fa-arrow-left-long"></i>', '<i class="fa-solid fa-arrow-right-long"></i>'],
             }
           }
     });
@@ -1216,19 +1225,17 @@
         navPosition: 'bottom',
           responsive: {
             1024:{
-                items: 4,
-                controls: true,
-                controlsText: ['<i class="fa-solid fa-arrow-left"></i>', '<i class="fa-solid fa-arrow-right"></i>'],
+                items: 5,
                 mouseDrag: true,
-            }
           }
+        }
     });
     var slider = tns({
         container: '.news-holder',
         items: 1,
         autoplay: true,
         axis: 'horizontal',
-        slideBy: 'page',
+        slideBy: '1',
         autoplayButtonOutput: false,
         controls: false,
         nav: false,
@@ -1236,16 +1243,16 @@
         navPosition: 'top',
           responsive: {
             1024:{
-                items: 4,
+                items: 3,
                 speed: 500,
                 autoplay: true,
                 controls: true,
-                controlsText: ['<i class="fa-solid fa-arrow-left"></i>', '<i class="fa-solid fa-arrow-right"></i>'],
+                controlsText: ['<i class="fa-solid fa-arrow-left-long"></i>', '<i class="fa-solid fa-arrow-right-long"></i>'],
             }
           }
     });
     var slider = tns({
-        container: '.testimonial-holder',
+        container: '.testimonial-list-holder',
         items: 1,
         autoplay: true,
         axis: 'horizontal',
@@ -1254,16 +1261,15 @@
         controls: false,
         nav: false,
         mouseDrag: true,
-        navPosition: 'top',
+        navPosition: 'bottom',
           responsive: {
             1080:{
                 items: 1,
                 controls: true,
-                controlsText: ['<i class="fa-solid fa-arrow-left"></i>', '<i class="fa-solid fa-arrow-right"></i>'],
+                controlsText: ['<i class="fa-solid fa-arrow-left-long"></i>', '<i class="fa-solid fa-arrow-right-long"></i>'],
             }
           }
     });
-
 </script>
 
 
