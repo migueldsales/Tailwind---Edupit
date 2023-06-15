@@ -1181,17 +1181,14 @@
                 slideBy: 1
             }
           }
-
     });
-</script>
-
-<script type="module">
     var slider = tns({
         container: '.slider-card-holder',
         items: 1,
         autoplay: true,
         axis: 'horizontal',
         slideBy: 'page',
+        speed: 800,
         autoplayButtonOutput: false,
         controls: false,
         nav: false,
@@ -1205,9 +1202,27 @@
             }
           }
     });
-</script>
-
-<script type="module">
+    var slider = tns({
+        container: '.about-slider-holder',
+        items: 2,
+        autoplay: true,
+        axis: 'horizontal',
+        slideBy: 'page',
+        autoplayButtonOutput: false,
+        controls: false,
+        nav: true,
+        speed: 800,
+        mouseDrag: true,
+        navPosition: 'bottom',
+          responsive: {
+            1024:{
+                items: 4,
+                controls: true,
+                controlsText: ['<i class="fa-solid fa-arrow-left"></i>', '<i class="fa-solid fa-arrow-right"></i>'],
+                mouseDrag: true,
+            }
+          }
+    });
     var slider = tns({
         container: '.news-holder',
         items: 1,
@@ -1229,8 +1244,6 @@
             }
           }
     });
-</script>
-<script type="module">
     var slider = tns({
         container: '.testimonial-holder',
         items: 1,
@@ -1250,6 +1263,10 @@
             }
           }
     });
+
 </script>
+
+
+
 
 </html>

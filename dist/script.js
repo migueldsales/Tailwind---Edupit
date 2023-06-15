@@ -16,4 +16,13 @@ NavDropToggle.forEach((drop)=>{
     });
 });
 
+const bannerfloat = document.querySelector(".header");
+window.addEventListener("scroll", () => {
+  console.log(window.pageYOffset);
+  if (window.pageYOffset >= 100) {
+    header.classList.add("header-nav-top");
+  } else {
+    header.classList.remove("header-nav-top");
+  }
+});
 

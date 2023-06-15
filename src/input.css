@@ -234,7 +234,7 @@ body{
     @apply py-[7rem]
   }
   .slider-card-holder{
-    @apply grid gap-[2rem] justify-center lg:flex lg:mt-[-15rem] lg:justify-center lg:px-[35rem] 
+    @apply grid gap-[2rem] justify-center lg:flex lg:mt-[-15rem] lg:justify-center lg:px-[20rem] 
   }
   .slider-card-list{
     @apply relative bg-light border-2 border-primary border-opacity-50	 rounded-xl py-[4rem] w-[25rem]  block justify-center text-center hover:shadow-2xl transition-all duration-500 ease-in-out
@@ -522,6 +522,7 @@ body{
   .newsletter-calltoactions{
     @apply lg:flex lg:items-center
   }
+
   .newsletter input{
     @apply w-full lg:mx-[5rem] py-[1rem] my-[1rem] lg:my-0 rounded-lg
   }
