@@ -9,8 +9,8 @@ body{
     @apply max-w-[120rem] px-[0rem]
   }
   .text-stroke{
-    -webkit-text-stroke: 5px #ffffff;
-    text-stroke: 4px #ffffff;
+    -webkit-text-stroke: 4px #ffffff;
+    text-stroke: 6px #ffffff;
   }
   .about .tns-outer{
     @apply w-[30rem]
@@ -212,7 +212,7 @@ body{
     @apply py-2 lg:bg-primary;
 }
 .header-main-content{
-    @apply flex items-center w-full max-w-[100rem] mx-auto justify-center lg:justify-between;
+    @apply flex items-center w-full max-w-[100rem] mx-auto justify-center lg:justify-between lg:px-[10rem];
 }
 .header-text{
     @apply hidden lg:flex items-center text-white gap-4 font-medium;
@@ -244,6 +244,9 @@ body{
 .header-logo{
     @apply lg:hidden py-[1rem];
 }
+.header-wrapper{
+  @apply lg:px-[10rem]
+}
 .header-wrapper:last-child{
     @apply lg:fixed lg:w-full lg:top-[5rem] z-50 transition-all duration-500;
 }
@@ -260,7 +263,7 @@ body{
     @apply flex flex-col items-center justify-between lg:flex-row lg:bg-bgblue lg:p-[1.5rem] lg:rounded-md lg:w-full lg:max-w-[80rem] lg:mx-auto;
 }
 .header-wrapper h6{
-    @apply bg-[hsl(161.68,85.64%,38.24%)] lg:hidden w-full lg:w-fit px-4 py-2 relative text-white font-bold text-[1.5rem] lg:bg-transparent; 
+    @apply bg-primary lg:hidden w-full lg:w-fit px-4 py-2 relative text-white font-bold text-[1.5rem] lg:bg-transparent; 
 }
 .header-wrapper ul{
     @apply bg-white w-full h-0 overflow-hidden lg:overflow-visible transition-all left-0 top-[3.2rem] lg:bg-transparent lg:h-fit lg:flex lg:items-center lg:justify-center;
@@ -269,16 +272,19 @@ body{
     @apply h-full transition-all lg:h-fit;
 }
 .header-wrapper ul li{
-    @apply py-3 text-[#444] lg:text-white font-medium border-t-2 relative lg:border-0;
+    @apply py-3 uppercase lg:normal-case text-[.8rem] lg:text-[1rem]  text-gray-600 lg:font-normal lg:text-white font-bold border-t-2 relative lg:border-0;
+}
+.header-wrapper ul li i{
+  @apply text-[.6rem] text-gray-500
 }
 .header-wrapper ul li a{
     @apply pl-4 flex items-center;
 }
 .header-wrapper ul li a span::before{
-    @apply content-[""] absolute block bg-[#444] w-4 h-1 right-[1rem] transition-all duration-500 lg:hidden;
+    @apply content-[""] absolute block bg-gray-600 w-4 h-1 right-[1rem] transition-all duration-500 lg:hidden;
 }
 .header-wrapper ul li a span::after{
-    @apply content-[""] absolute block bg-[#444] w-1 h-4 right-[1.4rem] -translate-y-[.38rem] transition-all duration-500 lg:hidden;
+    @apply content-[""] absolute block bg-gray-600 w-1 h-4 right-[1.4rem] -translate-y-[.38rem] transition-all duration-500 lg:hidden;
 }
 .header-wrapper ul li a.open span::after{
     @apply hidden transition-all duration-500;
@@ -286,56 +292,56 @@ body{
 .header-wrapper ul li a i{
     @apply px-2 hidden lg:block;
 }
-.second-drop{
+.dropdown{
     @apply z-10 h-full max-h-0 overflow-hidden transition-all lg:absolute lg:translate-y-10 lg:opacity-0 lg:top-[3rem] lg:left-0;
 }
-.header-wrapper ul li:hover .second-drop{
+.header-wrapper ul li:hover .dropdown{
     @apply lg:overflow-visible lg:max-h-[20rem] lg:opacity-100 lg:translate-y-0 transition-all;
 }
-.second-drop.open{
+.dropdown.open{
     @apply max-h-[50rem] transition-all duration-500;
 }
-.second-drop ul{
+.dropdown ul{
     @apply flex flex-col top-0 mt-3 lg:m-0 h-full lg:h-fit lg:bg-[hsl(161.68,85.64%,38.24%)] transition-all duration-500;
 }
-.second-drop ul li{
-    @apply font-normal lg:w-[15rem] lg:hover:bg-white lg:hover:text-primary transition-all relative duration-500;
+.dropdown ul li{
+    @apply normal-case font-normal lg:w-[15rem] lg:hover:bg-white lg:hover:text-primary transition-all relative duration-500;
 }
-.second-drop ul li a{
-    @apply hover:text-[hsl(161.68,85.64%,38.24%)] transition-all ml-[2rem] lg:m-0;
+.dropdown ul li a{
+    @apply hover:text-primary transition-all ml-[2rem] lg:m-0;
 }
-.second-drop ul li a::before{
+.dropdown ul li a::before{
     @apply hidden;
 }
-.second-drop ul li a::after{
+.dropdown ul li a::after{
     @apply hidden;
 }
-.second-drop ul li:hover .third-drop-parent ul{
+.dropdown ul li:hover .dropdown.children ul{
     @apply lg:opacity-100 lg:top-[-2rem] transition-all duration-500;
 }
-.second-drop ul li:hover .dropdown.children-portfolio ul{
+.dropdown ul li:hover .dropdown.children-portfolio ul{
     @apply lg:opacity-0 transition-all duration-500;
 }
-.third-drop-parent ul{
+.dropdown.children ul{
     @apply lg:opacity-0 lg:m-0 lg:absolute lg:left-[15rem] lg:w-fit lg:top-[2rem] transition-all duration-500;
 }
-.third-drop-parent ul li{
+.dropdown.children ul li{
     @apply relative transition-all;
 }
-.third-drop-parent ul li a{
+.dropdown.children ul li a{
     @apply px-[2rem] transition-all;
 }
 .dropdown.children-portfolio ul{
     @apply lg:opacity-0 lg:invisible lg:absolute lg:py-[1rem] z-40 lg:left-[-15rem] lg:max-h-fit lg:w-fit lg:top-0 lg:translate-y-5 transition-all duration-500;
 }
-.third-drop-parent ul li:hover .dropdown.children-portfolio ul{
+.dropdown.children ul li:hover .dropdown.children-portfolio ul{
     @apply lg:opacity-100 lg:visible lg:-translate-y-2 transition-all duration-500 z-50;
 }
 .dropdown.children-portfolio ul li a{
     @apply px-[4rem] lg:px-[1rem] w-[20rem] transition-all;
 }
 .toggle-menu{
-    @apply absolute right-5 top-[35%] lg:hidden;
+    @apply absolute right-5 top-[35%] lg:hidden cursor-pointer;
 }
 .toggle-menu span{
     @apply block bg-white h-[.2rem] w-[1.5rem];
@@ -360,7 +366,7 @@ body{
 }
 
 .banner-item{
-  @apply py-[10rem] bg-bannerBg bg-no-repeat bg-center bg-cover h-[50rem] lg:h-[60rem] lg:pt-[15rem] lg:flex lg:items-center lg:justify-center lg:mx-auto lg:px-[10rem]
+  @apply py-[10rem] lg:px-[15rem] bg-bannerBg bg-no-repeat bg-center bg-cover h-[50rem] lg:h-[70rem] lg:pt-[15rem] lg:flex lg:items-center lg:justify-center lg:mx-auto
 }
 
 .banner-content{
@@ -395,8 +401,8 @@ body{
   @apply flex justify-center items-center gap-x-[.5rem] mt-[3rem] text-light lg:justify-start
 }
 
-.banner-bg-text{
-  @apply absolute z-50 bg-clip-text text-transparent text-[3.5rem] left-0 top-[-2rem] opacity-[.07] lg:text-[7rem]
+.edupit-bg{
+  @apply absolute z-50 bg-clip-text text-transparent text-[5rem] left-0 top-[-2rem] opacity-[.05] lg:text-[7rem]
 }
 
 
@@ -608,7 +614,7 @@ body{
   }
 
   .news{
-    @apply mx-[5rem] lg:px-[15rem] lg:py-[5rem] flex justify-center 
+    @apply mx-[1rem] lg:mx-[5rem] lg:px-[15rem] lg:py-[5rem] flex justify-center 
   }
   .news .container{
     @apply relative lg:max-w-[80rem] lg:mx-auto
@@ -620,7 +626,7 @@ body{
     @apply text-[1.5rem] lg:text-[2.5rem] font-semibold w-[28rem] mb-[1rem] lg:w-[40rem]
   }
   .news-holder{
-    @apply  lg:mt-[3rem] block lg:gap-[2rem] lg:flex
+    @apply  lg:mt-[3rem] block lg:gap-[2rem] lg:flex my-[5rem]
   }
   .news-details h5{
     @apply px-[1rem] text-[1.2rem] font-semibold py-[1rem] mt-[1rem] hover:text-primary transition-all duration-300 ease-in-out
@@ -629,26 +635,31 @@ body{
     @apply px-[1rem] text-primary mb-[2rem] flex align-middle gap-[2rem]
   }
   .news-img{
-    @apply relative flex 
+    @apply relative flex overflow-hidden transition-all ease-in-out duration-500
   }
-  .news-img img{
-    @apply max-w-[45rem] h-[20rem] transition-all duration-500 
+  .news-img img {
+    @apply max-w-[30rem] lg:max-w-[45rem] h-[26rem] lg:h-[22rem] transition-all duration-500 
   }
   .news-list:hover .news-img span{
-    @apply w-full h-full top-0 left-0 transition-all duration-500;
+    @apply w-full h-full top-0 left-0 transition-all ease-in-out duration-500;
   }
   .news-img span{
     @apply absolute bg-dark w-0 h-0 top-[50%] left-[50%] z-0 opacity-50 transition-all duration-500;
   }
   .news-img a{
-    @apply  absolute top-[1rem] left-[1rem] p-[.5rem] bg-primary text-light rounded-lg cursor-pointer
+    @apply  absolute w-0 h-0 top-[1rem] text-[0] left-[1rem] bg-primary text-light rounded-lg cursor-pointer transition-all ease-in-out duration-300
+  }
+  .news-list:hover .news-img a{
+    @apply w-auto h-auto bg-primary p-[.5rem] text-[1rem] z-10 transition-all ease-in-out duration-500;
   }
   .news-list{
-    @apply relative shadow-2xl py-[2rem] lg:shadow-xl cursor-pointer
+    @apply relative shadow-xl py-[2rem] lg:shadow-xl cursor-pointer h-[45rem] lg:h-[40rem] transition-all ease-in-out duration-500
   }
-  .news-list:hover .news-img figure img{
+  .news-list:hover .news-img figure {
     @apply scale-110 transition-all ease-in-out duration-500
   }
+
+
   .btn-trans-black{
     @apply w-[10rem] ml-[1rem]
   }
@@ -670,7 +681,7 @@ body{
     @apply mb-[6rem] lg:mb-0
   }
   .testimonial-holder{
-    @apply lg:w-[40rem] lg:mx-auto px-[2rem]
+    @apply lg:w-[40rem] lg:mx-auto lg:px-[2rem]
   }
   .testimonial-holder h1{
     @apply flex justify-center mt-[2rem] text-[1.5rem] lg:text-[1.2rem] text-primary font-extrabold
@@ -828,7 +839,7 @@ body{
 }
 
 .footer{
-  @apply flex lg:block justify-center bg-bgblue py-[2rem] lg:px-[20rem]
+  @apply flex justify-center bg-bgblue py-[2rem] lg:px-[20rem]
 }
 .footer-wrapper{
     @apply  relative text-white lg:flex lg:justify-between
