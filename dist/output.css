@@ -3114,7 +3114,7 @@ header {
   .links-holder {
     display: flex;
     justify-content: center;
-    gap: 5rem;
+    gap: 15rem;
   }
 }
 

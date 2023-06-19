@@ -800,7 +800,7 @@ body{
   @apply pb-[1rem] text-[1.2rem] 
 }
 .links-holder{
-  @apply lg:flex lg:justify-center lg:gap-[5rem]
+  @apply lg:flex lg:justify-center lg:gap-[15rem]
 }
 .links-row{
   @apply text-center lg:text-left text-white
